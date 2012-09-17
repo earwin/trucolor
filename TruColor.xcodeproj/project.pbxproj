@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D13089CC16077B52009EBE7A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13089CB16077B52009EBE7A /* Cocoa.framework */; };
+		D13089E016077B99009EBE7A /* TruColorHack.m in Sources */ = {isa = PBXBuildFile; fileRef = D13089DF16077B99009EBE7A /* TruColorHack.m */; };
+		D13089E316077BD5009EBE7A /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D13089E216077BD5009EBE7A /* JRSwizzle.m */; };
+		D13089EB16078A8A009EBE7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D13089E916078A8A009EBE7A /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D13089C816077B52009EBE7A /* TruColor.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruColor.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13089CB16077B52009EBE7A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D13089CE16077B52009EBE7A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D13089CF16077B52009EBE7A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D13089D016077B52009EBE7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D13089DE16077B99009EBE7A /* TruColorHack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruColorHack.h; sourceTree = "<group>"; };
+		D13089DF16077B99009EBE7A /* TruColorHack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruColorHack.m; sourceTree = "<group>"; };
+		D13089E116077BD5009EBE7A /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
+		D13089E216077BD5009EBE7A /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
+		D13089E5160785F4009EBE7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13089EA16078A8A009EBE7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D13089C516077B52009EBE7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13089CC16077B52009EBE7A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D13089BD16077B52009EBE7A = {
+			isa = PBXGroup;
+			children = (
+				D13089E416077BE6009EBE7A /* JRSwizzle */,
+				D13089DE16077B99009EBE7A /* TruColorHack.h */,
+				D13089DF16077B99009EBE7A /* TruColorHack.m */,
+				D13089E5160785F4009EBE7A /* Info.plist */,
+				D13089E916078A8A009EBE7A /* InfoPlist.strings */,
+				D13089CA16077B52009EBE7A /* Frameworks */,
+				D13089C916077B52009EBE7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D13089C916077B52009EBE7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D13089C816077B52009EBE7A /* TruColor.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D13089CA16077B52009EBE7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D13089CB16077B52009EBE7A /* Cocoa.framework */,
+				D13089CD16077B52009EBE7A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D13089CD16077B52009EBE7A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D13089CE16077B52009EBE7A /* AppKit.framework */,
+				D13089CF16077B52009EBE7A /* CoreData.framework */,
+				D13089D016077B52009EBE7A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D13089E416077BE6009EBE7A /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				D13089E116077BD5009EBE7A /* JRSwizzle.h */,
+				D13089E216077BD5009EBE7A /* JRSwizzle.m */,
+			);
+			name = JRSwizzle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D13089C716077B52009EBE7A /* TruColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13089DA16077B52009EBE7A /* Build configuration list for PBXNativeTarget "TruColor" */;
+			buildPhases = (
+				D13089C416077B52009EBE7A /* Sources */,
+				D13089C516077B52009EBE7A /* Frameworks */,
+				D13089C616077B52009EBE7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruColor;
+			productName = TruColor;
+			productReference = D13089C816077B52009EBE7A /* TruColor.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D13089BF16077B52009EBE7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Wonderland;
+			};
+			buildConfigurationList = D13089C216077B52009EBE7A /* Build configuration list for PBXProject "TruColor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D13089BD16077B52009EBE7A;
+			productRefGroup = D13089C916077B52009EBE7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D13089C716077B52009EBE7A /* TruColor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D13089C616077B52009EBE7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13089EB16078A8A009EBE7A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D13089C416077B52009EBE7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13089E016077B99009EBE7A /* TruColorHack.m in Sources */,
+				D13089E316077BD5009EBE7A /* JRSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D13089E916078A8A009EBE7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13089EA16078A8A009EBE7A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D13089D816077B52009EBE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D13089D916077B52009EBE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D13089DB16077B52009EBE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D13089DC16077B52009EBE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D13089C216077B52009EBE7A /* Build configuration list for PBXProject "TruColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13089D816077B52009EBE7A /* Debug */,
+				D13089D916077B52009EBE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13089DA16077B52009EBE7A /* Build configuration list for PBXNativeTarget "TruColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13089DB16077B52009EBE7A /* Debug */,
+				D13089DC16077B52009EBE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D13089BF16077B52009EBE7A /* Project object */;
+}
