@@ -1,12 +1,12 @@
 ## Why? Wha? How?
 
-Terminal.app adjusts text foreground color so it always remains visible over whatever background it happens upon.
+Terminal.app adjusts text foreground color so it always remains visible over whatever background it can happen upon.
 See the left image, the same ANSI color codes are used for background and foreground,
 but green is visible over green, and red is visible over red.
 
 Black (#0) is an exception to the rule, it is not adjusted when displayed over itself.
 
-While this might be handy for badly chosen color combinations (doesn't make default blue-over-black crap any better though), but botches up carefully chosen color themes.
+While this might be handy for badly chosen color combinations (doesn't make default blue-over-black crap any better though), it botches up carefully chosen color themes.
 
 Left - TruColor off, Right - TruColor on
 
