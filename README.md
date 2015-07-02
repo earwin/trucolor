@@ -1,4 +1,4 @@
-## Why? Wha? How?
+## Why? & How?
 
 Terminal.app adjusts text foreground color so it always remains visible over whatever background it can happen upon.
 See the left image, the same ANSI color codes are used for background and foreground,
@@ -22,3 +22,5 @@ Feel free to test on other versions and fix Min/MajBundleVersion as well as buil
 Plugin requires [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) to load itself into Terminal.app.
 
 Version 0.9.9 worked for me on 10.7.4, though I stumbled recently upon [EasySIMBL](https://github.com/norio-nomura/EasySIMBL) and like it more.
+
+Upd: EasySIMBL is broken on 10.10.4 and up, SIMBL 0.9.9 works on 10.10.4, unsure of 10.11
